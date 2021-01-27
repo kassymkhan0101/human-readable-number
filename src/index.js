@@ -107,6 +107,6 @@ module.exports = function toReadable (number) {
             g = e+ " "+ units['1'];
            }
     
-    return d;
+    return g;
    
 }
