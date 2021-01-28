@@ -2,36 +2,21 @@ module.exports = function toReadable (number) {
     var n = number.toString();
     var units = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen","eighteen", "nineteen"]
     var tens = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy","eighty", "ninety"]
-    if(n.length == 1){
-        for(i=0; i<10; i++){
-            if(n == i){
-                return units[0];
-            }
+    for(i=0; i<20; i++){
+        if(n == i){
+            return units[i];
         }
-    }else if(n.length ==2 || n[0]==1){
-        for(k=0; k<10; k++){
-            if(n == k+10){
-                return units[k+10]
-            }
-        }
-             
-             }
-     else if(n.length == 2){
-        var p = "";
-        for(j=2; j<10; j++){
-            if(n[0]==j){
-                p = p + " "+tens[j-2]
-       
-            }
-            if(n[1]==j-1){
-                p= p+" "+ units[j-1]
-            }
-        }
-        return p;
-              
-        
     }
-
+    if(n>20 && n<100){
+    for(j=0; j< 8; j++){
+        if(n.charAt(0)== tens[j]){
+            for(k=0; k<10; k++){
+            if(n.charAt(1) == units[k+1]){
+                return (tens[j]+ units[k+1])
+            }}
+            
+        }
+    }
   
    
 }
