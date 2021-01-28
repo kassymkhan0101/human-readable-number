@@ -2,7 +2,7 @@ module.exports = function toReadable (number) {
     var units = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen","eighteen", "nineteen"];
     var tens = ["", "twenty", "thirty", "forty", "fifty", "sixty", "seventy","eighty", "ninety"];
     for(i=2; i<10; i++){
-        if(number/10==i){
+        if(number/10===i){
             return tens[i-1];
         }
     }
