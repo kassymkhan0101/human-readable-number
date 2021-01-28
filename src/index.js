@@ -6,8 +6,7 @@ module.exports = function toReadable (number) {
         if(n == i){
             return units[i];
         }
-    }
-    else if(n>20 && n<100){
+    }else if(n>20 && n<100){
         
     for(j=0; j< 8; j++){
         if(n.charAt(0)== j+2){
