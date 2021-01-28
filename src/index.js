@@ -60,6 +60,20 @@ module.exports = function toReadable (number) {
             
         
     }
+    else if(num.length == 3){
+        for(i=1; i<10; i++){
+            if(num[0]==i){
+                for(u=2; u<10; u++){
+                    if(num[1]==u && num[2]==0){
+                         
+                                return (units[i]+" "+"hundred"+" "+tens[u-1]);
+                     }
+                 }
+             
+         
+            }
+        }
+    }
     
         
 }
