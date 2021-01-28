@@ -47,7 +47,7 @@ module.exports = function toReadable (number) {
     }
     else if(num.length == 3){
         for(i=1; i<10; i++){
-            if(num[0]==i) && num[1]==0{
+            if(num[0]==i && num[1]==0){
                 
                     
                          for(k=1; k<10; k++){
