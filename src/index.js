@@ -53,6 +53,10 @@ module.exports = function toReadable (number) {
                             if(num[2]==k){
                  return (units[i]+" "+"hundred" + " "+ units[k]);
              }}}
+              else if(num[1]==0 && num[2]==0){
+                 
+                 return (units[i]+" "+"hundred");
+             }
          }
             }
         }
