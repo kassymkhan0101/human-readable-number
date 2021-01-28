@@ -8,16 +8,16 @@ module.exports = function toReadable (number) {
         }
     }}
     else if(n>20 && n<100){
-        var h = "";
+        
     for(j=0; j< 8; j++){
         if(n.charAt(0)== j+2){
             for(k=0; k<10; k++){
             if(n.charAt(1) == k+1){
-                h = h + tens[j] + units[k+1]
-                return h;
+                return (tens[j] + units[k+1]);
+                
             
         }
     }
   
    
-}}
+}}}
