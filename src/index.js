@@ -9,7 +9,7 @@ module.exports = function toReadable (number) {
             }
         }
         
-    }else if(num.length == 2){
+    }else if(num.length == 2 && number<20){
         for(i=0; i<10; i++){
             if(num[0]==1 && num[1]== i){
                 return units[i+10];
