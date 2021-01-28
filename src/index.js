@@ -1,5 +1,4 @@
 module.exports = function toReadable (number) {
-    var san = [];
     var units = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen","eighteen", "nineteen"];
     var tens = ["", "twenty", "thirty", "forty", "fifty", "sixty", "seventy","eighty", "ninety"];
     for(i=2; i<10; i++){
@@ -32,7 +31,7 @@ module.exports = function toReadable (number) {
          }
      }
     else if(num.length == 3){
-        for(i=1; 1<10; i++){
+        for(i=1; i<10; i++){
             if(num[0]==i){
                 for(u=2; u<10; u++){
                     if(num[1]==u){
