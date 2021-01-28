@@ -4,10 +4,10 @@ module.exports = function toReadable (number) {
     var num = number.toString().split("");
     if(num.length == 1){
         for(i=0; i<10; i++){
-            if(num[0]==i){
-                return units[i]
+            if(num[0]== i){
+                return units[i];
             }
         }
         
-    }
+    }}
 
