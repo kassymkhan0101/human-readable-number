@@ -25,7 +25,7 @@ module.exports = function toReadable (number) {
              if(num[0]==i){
                  for(k=1; k<10; k++){
                      if(num[1]==k){
-                         return (tens[i-1]+" "+ units[k])
+                         return (tens[i-1]+" "+ units[k]);
                      }
                  }
              }
@@ -38,7 +38,7 @@ module.exports = function toReadable (number) {
                     if(num[1]==u){
                          for(k=1; k<10; k++){
                             if(num[2]==k){
-                                return (units[i]+" "+"hundred"+" "+tens[u-1]+" "+ units[k])
+                                return (units[i]+" "+"hundred"+" "+tens[u-1]+" "+ units[k]);
                      }
                  }
              }
