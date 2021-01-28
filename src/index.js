@@ -12,7 +12,7 @@ module.exports = function toReadable (number) {
         if(n.charAt(0)== tens[j]){
             for(k=0; k<10; k++){
             if(n.charAt(1) == units[k+1]){
-                return (tens[j]+ units[k+1])
+                return (tens[j] + units[k+1]);
             }}
             
         }
