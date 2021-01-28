@@ -577,31 +577,31 @@ const toReadable = require('./src');
 //   const readable = toReadable(95);
 
 //   assert.equal(readable, 'ninety five');
-// });
+});
 
-// it('Should return \'ninety six\' when 96 given', () => {
-//   const readable = toReadable(96);
+it('Should return \'ninety six\' when 96 given', () => {
+  const readable = toReadable(96);
 
-//   assert.equal(readable, 'ninety six');
-// });
+  assert.equal(readable, 'ninety six');
+});
 
-// it('Should return \'ninety seven\' when 97 given', () => {
-//   const readable = toReadable(97);
+it('Should return \'ninety seven\' when 97 given', () => {
+  const readable = toReadable(97);
 
-//   assert.equal(readable, 'ninety seven');
-// });
+  assert.equal(readable, 'ninety seven');
+});
 
-// it('Should return \'ninety eight\' when 98 given', () => {
-//   const readable = toReadable(98);
+it('Should return \'ninety eight\' when 98 given', () => {
+  const readable = toReadable(98);
 
-//   assert.equal(readable, 'ninety eight');
-// });
+  assert.equal(readable, 'ninety eight');
+});
 
-// it('Should return \'ninety nine\' when 99 given', () => {
-//   const readable = toReadable(99);
+it('Should return \'ninety nine\' when 99 given', () => {
+  const readable = toReadable(99);
 
-//   assert.equal(readable, 'ninety nine');
-// });
+  assert.equal(readable, 'ninety nine');
+});
 
 it('Should return \'one hundred\' when 100 given', () => {
   const readable = toReadable(100);
