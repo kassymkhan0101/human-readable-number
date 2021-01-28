@@ -47,7 +47,10 @@ module.exports = function toReadable (number) {
                  for(k=1; k<10; k++){
                             if(num[2]==k){
                  return (units[i]+" "+"hundred" + " "+ units[k+10]);
-             }}}
+             }else if(num[2]==0){
+                 return (units[i]+" "+"hundred" + " "+ units[10]);
+             }
+                 }}
               else if(num[1]==0){
                   for(k=1; k<10; k++){
                             if(num[2]==k){
