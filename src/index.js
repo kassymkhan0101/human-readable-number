@@ -11,9 +11,9 @@ module.exports = function toReadable (number) {
         
     }else if(num.length == 2){
         for(i=0; i<10; i++){
-            if(num == (i+10)){
+            if(num[0]==1 && num[1]== i){
                 return units[i+10];
             }
-             }}
-}
+        }
+}}
 
