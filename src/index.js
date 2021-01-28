@@ -9,7 +9,7 @@ module.exports = function toReadable (number) {
         }else if(number < 100){
             return doubleDigit(number);
         }else{
-            if(toReadable(number%100) == 0){
+            if((number%100) == 0){
                 return units[Math.floor(number/100)] + " hundred ";
             }
             return units[Math.floor(number/100)] + " hundred " + toReadable(number%100);
