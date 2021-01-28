@@ -43,6 +43,11 @@ module.exports = function toReadable (number) {
                          return (units[i]+" "+"hundred"+" "+tens[u-1]);
                      }
                  }
+             }else if(num[1]==1){
+                 return (units[i]+" "+"hundred" + " "+ units[k+10]);
+             }
+              else if(num[1]==0){
+                 return (units[i]+" "+"hundred" + " "+ units[k]);
              }
          }
             }
