@@ -4,13 +4,13 @@ module.exports = function toReadable (number) {
     var tens = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy","eighty", "ninety"]
     if(n.length == 1){
         for(i=0; i<10; i++){
-            if(n.parseInt() == i){
+            if(n == i){
                 return units[0];
             }
         }
     }else if(n.length ==2 || n[0]==1){
         for(k=0; k<10; k++){
-            if(n.parseInt() == k+10){
+            if(n == k+10){
                 return units[k+10]
             }
         }
