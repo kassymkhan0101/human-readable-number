@@ -1,7 +1,7 @@
 module.exports = function toReadable (number) {
     var n = number.toString();
-    var units = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen","eighteen", "nineteen"]
-    var tens = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy","eighty", "ninety"]
+    var units = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen","eighteen", "nineteen"];
+    var tens = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy","eighty", "ninety"];
     for(i=0; i<20; i++){
         if(n == i){
             return units[i];
