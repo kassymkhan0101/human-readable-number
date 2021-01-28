@@ -44,11 +44,15 @@ module.exports = function toReadable (number) {
                      }
                  }
              }else if(num[1]==1){
+                 for(k=1; k<10; k++){
+                            if(num[2]==k){
                  return (units[i]+" "+"hundred" + " "+ units[k+10]);
-             }
+             }}}
               else if(num[1]==0){
+                  for(k=1; k<10; k++){
+                            if(num[2]==k){
                  return (units[i]+" "+"hundred" + " "+ units[k]);
-             }
+             }}}
          }
             }
         }
