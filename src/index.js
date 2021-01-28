@@ -31,21 +31,21 @@ module.exports = function toReadable (number) {
              }
          }
      }
-//     else if(num.length == 3){
-//         for(i=1; 1<10; i++){
-//             if(num[0]==i){
-//                 for(u=2; u<10; u++){
-//                     if(num[1]==u){
-//                          for(k=1; k<10; k++){
-//                             if(num[1]==k){
-//                                 return (units[i]+" "+"hundred"+" "+tens[u-1]+" "+ units[k])
-//                      }
-//                  }
-//              }
-//          }
-//             }
-//         }
-//     }
+    else if(num.length == 3){
+        for(i=1; 1<10; i++){
+            if(num[0]==i){
+                for(u=2; u<10; u++){
+                    if(num[1]==u){
+                         for(k=1; k<10; k++){
+                            if(num[2]==k){
+                                return (units[i]+" "+"hundred"+" "+tens[u-1]+" "+ units[k])
+                     }
+                 }
+             }
+         }
+            }
+        }
+    }
     
         
 }
