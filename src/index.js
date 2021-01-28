@@ -18,7 +18,7 @@ module.exports = function toReadable (number) {
              }
      else if(n.length == 2){
         var p = "";
-        for(j=2; j<10; j+++){
+        for(j=2; j<10; j++){
             if(n[0]==j){
                 p = p + " "+tens[j-2]
        
