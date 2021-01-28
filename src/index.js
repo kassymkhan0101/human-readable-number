@@ -6,7 +6,7 @@ module.exports = function toReadable (number) {
         if(n == i){
             return units[i];
         }
-    }}
+    }
     else if(n>20 && n<100){
         
     for(j=0; j< 8; j++){
@@ -15,7 +15,7 @@ module.exports = function toReadable (number) {
             if(n.charAt(1) == k+1){
                 return (tens[j] + units[k+1]);
                 
-            
+            }
         }
     }
   
